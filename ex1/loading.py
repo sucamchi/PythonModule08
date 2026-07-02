@@ -53,8 +53,8 @@ def run_analysis() -> None:
 
     print("\nRolling two 6-sided dice 100 times...")
     import numpy
-    import pandas  # type: ignore
-    import matplotlib.pyplot as plot  # type: ignore
+    import pandas
+    import matplotlib.pyplot as plot
 
     die1 = numpy.random.randint(1, 7, size=100)
     die2 = numpy.random.randint(1, 7, size=100)
