@@ -56,15 +56,12 @@ def run_analysis() -> None:
     import pandas  # type: ignore
     import matplotlib.pyplot as plot  # type: ignore
 
-    # Roll two dice 100 times using numpy
     die1 = numpy.random.randint(1, 7, size=100)
     die2 = numpy.random.randint(1, 7, size=100)
     sum = die1 + die2
 
-    # Build a Series with pandas and count the frequency of each sum
     counts = pandas.Series(sum).value_counts().sort_index()
 
-    # Bar chart with matplotlib
     counts.plot(kind="bar", color="steelblue", edgecolor="black")
     plot.title("Sum of Two 6-Sided Dice (100 rolls)")
     plot.xlabel("Sum")

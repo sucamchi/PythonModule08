@@ -5,7 +5,7 @@
 name = "matrix-loading"
 version = "1.0.0"
 description = "Matrix Analysis Tool - pip vs Poetry dependency management"
-authors = ["Susi <sucamchi@gmail.com>"]
+authors = ["scamlett"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
